@@ -1,0 +1,436 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.15;
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+    background-color: black;
+}
+.navbar{
+    padding: 0px;
+    background-color:transparent;
+}
+#nav-bar{
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
+ .navbar-brand img{
+    border-radius: 50%;
+    padding-left:15px;
+    height: 40px;
+}
+.nav-link{
+    padding:0px !important;
+}
+.navbar .navbar-brand #logoName{
+    font-size:1.8rem;
+    padding-left: 7px;
+    color: white !important;
+}
+
+.navbar-nav li {
+    padding: 16px ;
+}
+.navbar-nav li a{
+    
+    text-align: center;
+    display:grid !important;
+    align-self: center !important;
+    color: orangered !important;
+    font-size:1.2rem;
+}
+.navbar  ul:hover{
+   padding-top: 0px;
+   padding-bottom: 0px;
+  
+}
+.navbar li:hover{
+    background-color:white;
+    color: black !important;
+}
+.navbar li a:hover{
+    color: black !important;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+.login-button{
+    
+    text-decoration:none;
+    padding: 10px !important;
+    color:whitesmoke !important;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background-image: radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    }
+    .login-text{
+        font-size: 1rem;
+        display: block;
+        padding:4px 6px;
+        margin: 0px auto;
+    }    
+    .navbar .login-button:hover{
+        background-color: transparent;
+    }
+.navbar i{
+    padding-right: 4px;
+}
+li .active a{
+    background-color: white !important;
+    color: black !important;
+}
+.navbar-toggler-icon{
+   font-size: 1.5rem;
+}
+.navbar button:focus{
+    outline: none;
+}
+
+.mainImage img{
+    width: 60vw;
+    height: 70vh;
+    display: block;
+    margin: 0px auto;
+}
+main{
+    position: relative;
+}
+.mainImage h3{
+     color: white !important;
+     font-weight: 600 !important;
+     font-size:3rem !important;
+     text-align: center;
+     margin-bottom: 0px;
+     padding-top: 16px ;
+}
+
+.mainImage #notify{
+    color: white;
+    font-size: 25px;
+    text-align: end;
+    display: grid;
+}
+.mainImage a{
+    text-decoration: none;
+}
+
+.mainImage i{
+    padding-right: 12px;
+}
+.about{
+    background-color: white;
+}
+.about>.about-us{
+    padding: 2rem 3rem;
+}
+.about .heading{
+    text-align: center;
+}
+.about h2{
+    margin-bottom: 30px;
+    padding-top: 30px ;
+    font-size: 3rem;
+}
+.about .aboutImage{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-self: center;
+   justify-content: center;
+}
+
+.about .aboutImage img{
+    max-width: 100%;
+    max-height: 100%;
+   text-align: center;
+   
+   border-radius: 10px;
+}
+
+
+.about .details{
+    font-size: 1.2rem;
+    line-height: 1.52;
+    text-align: justify;
+    padding-top: 1.3rem ;
+    font-weight: 600;
+}
+.row{
+   max-width: 100%;
+}
+.slide{
+    background-color: white !important;
+}
+.slide h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.slide hr{
+    width:35%;
+    color:gray;
+    display: block;
+    margin: 26px auto;
+    padding-top: 16px;
+}
+.mySlides {display: none;}
+.imageShow img {vertical-align: middle;
+               margin-top:2rem;
+               border-radius: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-top:3rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 22px;
+  padding: 0px 12px;
+  position: absolute;
+  top: 0;
+  
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0px 3px 10px 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+.testimonial{
+    margin:50px auto;
+    
+}
+.testimonial h2{
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.testimonial h2::after{
+    content: " ";
+    background-color: orangered;
+    display: block;
+    height: 3px;
+    width: 179px;
+    margin: 20px  auto 10px ;
+}
+.testimonial p{
+    color: aqua;
+    font-size: 17px;
+    margin:0px;
+    padding: 0px;
+}
+
+.testimonial p::before{
+    content: open-quote;
+    color: orangered;
+    font-size: 24px;
+}
+
+.testimonial p::after{
+    content: close-quote;
+    color: orangered;
+    font-size: 24px;
+}
+
+.testimonial .row{
+    margin-top: 30px ;
+}
+.testimonial .col-md-4{
+    margin:40px auto;
+}
+.profile {
+  padding: 70px 10px 10px;
+  background-color: papayawhip;
+}
+.profile img{
+    top: -60px;
+    position:absolute;
+    left: 120px;
+    border: 10px solid black;
+}
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile h3{
+     font-size: 20px;
+}
+.profile span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.profile:hover{
+    box-shadow: 0 0 15px 5px rgba(227, 233, 228, 0.966);
+}
+.form{
+    background-color: white;
+}
+
+.form h2{
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    color:black;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.form h2::after{
+    content: " ";
+    background-color: orangered;
+    display: block;
+    height: 3px;
+    width: 179px;
+    margin: 20px  auto 10px ;
+}
+.form p{
+    color: black;
+    font-size: 17px;
+    margin:0px;
+    padding: 0px;
+    font-weight: bold;
+}
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+.form 
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries*/
+
+@media all and (max-width:1107px){
+    html{
+        width: 100%;
+    }
+    .navbar .navbar-brand #logoName{
+        font-size:1.6rem;
+        padding-left: 6px;
+    }
+    .navbar-nav li a{
+        display: inline-flex;
+        font-size:1.0rem;
+        align-self: center;
+    }
+    .login-text{
+        font-size: 0.9rem;
+        
+    }  
+
+}
+@media all and (max-width:992px){
+    html{
+        width: 100%;
+    }
+    .navbar .navbar-brand{
+        margin: 0px auto;
+    }
+    .navbar .navbar-brand #logoName{
+        font-size:1.8rem;
+        padding-left: 7px;
+        color: white !important;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+    }
+    .navbar ul{
+       margin-top:8px;
+    }
+    .navbar-nav li a{
+        float:none ;
+        display: inline-flex;
+        text-align: center;
+        font-size:1.0rem;
+        align-self: center;
+    }
+    .login-button{
+        display: inline-flex;
+        width: 140px;
+        align-self: center;
+    }
+    .login-text{
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
