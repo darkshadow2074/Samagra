@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="black.css">
+</head>
+<body>
+  <div id="container">
+    <h2 id="heading" style="padding: 8px;">Challenge 5: BlackJack</h2>
+    <h3 id="res"><span id="result">Let's Play</span></h3>
+    <div id="flex-box-row1">
+      <div id="yourBox">
+        <h2> You : <span id="yourResult">0</span></h2>
+      </div>
+      <div id="botBox">
+        <h2> Bot : <span id="botResult">0</span></h2>
+      </div>
+    </div>
+  
+    <div id="flex-box-row2">
+      <div id="box">
+        <button class="btn btn-success m-2" id="hit">Hit</button>
+        <button class="btn btn-danger m-2" id="stand">Stand</button>
+        <button class="btn btn-warning m-2" id="deal">Deal</button>
+      </div>
+    </div> 
+    <div id="flex-box-row3">
+      <table id="final-result-table">
+        <tr>
+          <th>Wins</th>
+          <th>Loss</th>
+          <th>Draw</th>
+        </tr>
+        <tr>
+          <td><span id="win">0</span></td>
+          <td><span id="loss">0</span></td>
+          <td><span id="draw">0</span></td>
+        </tr>
+      </table>
+    </div>
+  
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+<script src="black.js"></script>
+</body>
+</html>
